@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hollanda ve Estonya Bayraqları</title>
+    <style>
+        body {
+            background-color: floralwhite;
+        }
+        .flag {
+            width: 300px;
+            height: 200px;
+            margin: 20px;
+            border: 2px solid black;
+        }
+        .netherlands {
+            background: linear-gradient(to bottom, red 33.3%, white 33.3% 66.6%, blue 66.6%);
+        }
+        .estonia {
+            background: linear-gradient(to bottom, blue 33.3%, black 33.3% 66.6%, white 66.6%);
+        }
+        .red-circle-flag {
+            background: red;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .red-circle-flag::after {
+            content: "";
+            width: 120px;
+            height: 120px;
+            background: yellow;
+            border-radius: 50%;
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+    <h2>Hollanda Bayrağı</h2>
+    <div class="flag netherlands"></div>
+    
+    <h2>Estonya Bayrağı</h2>
+    <div class="flag estonia"></div>
+   
+    <h2>Əlavə</h2>
+    <div class="flag red-circle-flag"></div>
+</body>
+</html>
